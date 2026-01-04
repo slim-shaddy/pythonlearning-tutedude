@@ -1,1 +1,124 @@
-name = "john"age = 20percent = 85.5student = ["john", 20, 85.5]print(type(student))print(student)days_of_week = ["Mon", "Tue", "Wed", "Thurs", "Fri", "Sat", "Sun" ]print(f"last days of week is {days_of_week[6]}")print(len(days_of_week))print (f"first day of the week {days_of_week[0]}")#slicing,concat,repeat,append,insertl1 = [3, 0, 8, 9, 6, 1, 5, 7,]print(l1[1:6:1])print(l1[1:6:2])#we get the output in list#concatination of listsl1 = [1,7,2]l2 = [0,5]print(l1 + l2)#repetition of listsl1 = [1, 7, 2]l2 = [0, 5]print (l1 * 3)#append()#add items to the end of the listfruits = ["Mango", "Apple", "Orange"]print(fruits)fruits.append("Banana")print(fruits)s1 = "Python is fun"print(s1.replace("Python","Java"))print(s1)# only add in the last#insert = adds an element before the specified index#syntax list.insert(index, item)fruits.insert(2,"Banana")print(fruits)"""extend()remove()pop()"""#append can only have 1 element at a time#extendfruits = ["Apple","Mango","Orange"]fruits.extend(["Banana","Grapes"])print(fruits)#remove#only remove the first elementfruits = ["apple", "mango","orange","mango"]print(fruits)fruits.remove("mango")print(fruits)#popfruits.pop()print(fruits)"""reverse()sort()count()Membership operations"""#reversedays_of_week = ["Mon","Tue","Wed","Thur","Fri","Sat","Sun"]print(days_of_week)days_of_week.reverse()print(days_of_week)#sortnum = [1,8,9,3,5]print(num)#by default accendingnum.sort()print(num)#decending ordernum.sort(reverse=True)print(num)#count# num = [1,2,3,0,0,8,8,5,5,4,6,5]# print(num)# item_to_count = int(input("Enter the number to be counted:"))# c = num.count(item_to_count)# print(f"Occurance of the {item_to_count} is {c}")#create a string count# weeks = ["Mon", "tues", "wed", "Mon"]# print(weeks)# weekdays = input("Enter days of week to search: ")# d = weeks.count(weekdays)# print(f"number of {weekdays} occurance {d}")#membership in operation# print("Mon" in weeks)# print("Mon" not in weeks0#Numericals operations in listnumbers = [10,4,6,8,1,9,-8.5]#smallest number in the list#min()print(f"smallest number in min {min(numbers)}")#maxprint(f"Biggest number in max {max(numbers)}")#sum total number of the listprint(f"total number : {sum(numbers)}")#nested lists (List inside another list)l1 = [1,8.5,"Sting", True, False, None, [1,2,3], 10]print(len(l1))print(l1[-2][0])l2 = [[1,2],[2,3],[1,2,[5,6]]]print(l2[2][2][1])
+name = "john"
+age = 20
+percent = 85.5
+
+student = ["john", 20, 85.5]
+print(type(student))
+print(student)
+
+days_of_week = ["Mon", "Tue", "Wed", "Thurs", "Fri", "Sat", "Sun" ]
+print(f"last days of week is {days_of_week[6]}")
+print(len(days_of_week))
+print (f"first day of the week {days_of_week[0]}")
+
+#slicing,concat,repeat,append,insert
+l1 = [3, 0, 8, 9, 6, 1, 5, 7,]
+print(l1[1:6:1])
+print(l1[1:6:2])
+#we get the output in list
+
+#concatination of lists
+l1 = [1,7,2]
+l2 = [0,5]
+print(l1 + l2)
+
+#repetition of lists
+l1 = [1, 7, 2]
+l2 = [0, 5]
+print (l1 * 3)
+
+#append()
+#add items to the end of the list
+
+fruits = ["Mango", "Apple", "Orange"]
+print(fruits)
+fruits.append("Banana")
+print(fruits)
+
+s1 = "Python is fun"
+print(s1.replace("Python","Java"))
+print(s1)
+# only add in the last
+
+#insert = adds an element before the specified index
+#syntax list.insert(index, item)
+fruits.insert(2,"Banana")
+print(fruits)
+
+"""extend()
+remove()
+pop()"""
+#append can only have 1 element at a time
+#extend
+fruits = ["Apple","Mango","Orange"]
+fruits.extend(["Banana","Grapes"])
+print(fruits)
+
+#remove
+#only remove the first element
+fruits = ["apple", "mango","orange","mango"]
+print(fruits)
+fruits.remove("mango")
+print(fruits)
+
+#pop
+fruits.pop()
+print(fruits)
+
+"""
+reverse()
+sort()
+count()
+Membership operations"""
+
+#reverse
+days_of_week = ["Mon","Tue","Wed","Thur","Fri","Sat","Sun"]
+print(days_of_week)
+days_of_week.reverse()
+print(days_of_week)
+#sort
+num = [1,8,9,3,5]
+print(num)
+#by default accending
+num.sort()
+print(num)
+#decending order
+num.sort(reverse=True)
+print(num)
+
+#count
+
+# num = [1,2,3,0,0,8,8,5,5,4,6,5]
+# print(num)
+# item_to_count = int(input("Enter the number to be counted:"))
+# c = num.count(item_to_count)
+# print(f"Occurance of the {item_to_count} is {c}")
+
+#create a string count
+
+ weeks = ["Mon", "tues", "wed", "Mon"]
+# print(weeks)
+# weekdays = input("Enter days of week to search: ")
+# d = weeks.count(weekdays)
+# print(f"number of {weekdays} occurance {d}")
+
+#membership in operation
+# print("Mon" in weeks)
+# print("Mon" not in weeks0
+
+#Numericals operations in list
+
+numbers = [10,4,6,8,1,9,-8.5]
+#smallest number in the list
+#min()
+print(f"smallest number in min {min(numbers)}")
+#max
+print(f"Biggest number in max {max(numbers)}")
+#sum total number of the list
+print(f"total number : {sum(numbers)}")
+#nested lists (List inside another list)
+l1 = [1,8.5,"Sting", True, False, None, [1,2,3], 10]
+print(len(l1))
+print(l1[-2][0])
+l2 = [[1,2],[2,3],[1,2,[5,6]]]
+print(l2[2][2][1])
